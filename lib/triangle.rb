@@ -1,6 +1,6 @@
 class Triangle
   # write code here
-  attr_reader :line_x, :line_y, :line_z, :lines
+  attr_reader :line_x, :line_y, :line_z
 
   def initialize(line_x, line_y, line_z)
     @line_x = line_x
