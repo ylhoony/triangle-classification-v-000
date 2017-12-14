@@ -20,7 +20,7 @@ class Triangle
   end
 
   def valid_number?
-    @line_x > 0 && @line_y > 0 && @line_z > 0
+    x > 0 && y > 0 && z > 0
   end
 
   def invalid_length?
