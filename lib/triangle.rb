@@ -1,18 +1,18 @@
 class Triangle
   # write code here
-  attr_reader :line_x, :line_y, :line_z
+  attr_reader :x, :y, :z
 
-  def initialize(line_x, line_y, line_z)
-    @line_x = line_x
-    @line_y = line_y
-    @line_z = line_z
+  def initialize(x, y, z)
+    @x = x
+    @y = y
+    @z = z
   end
 
   def kind
     raise TriangleError if !self.valid_number? || self.invalid_length?
-    if @line_x == @line_y && @line_y == @line_z
+    if x == y && y == z
       :equilateral
-    elsif @line_x == @line_y || @line_y == @line_z || @line_z == @line_x
+    elsif x == y || y == z || z == x
       :isosceles
     else
       :scalene
