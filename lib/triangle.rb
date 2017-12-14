@@ -24,7 +24,7 @@ class Triangle
   end
 
   def invalid_length?
-    @line_x >= @line_y + @line_z || @line_y >= @line_x + @line_z || @line_z >= @line_x + @line_y
+    x >= y + z || y >= x + z || z >= x + y
   end
 end
 
